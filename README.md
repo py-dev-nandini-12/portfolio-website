@@ -225,21 +225,12 @@ const [isPending, startTransition] = useTransition();
 
 - **Email**: [phy.nandini@gmail.com](mailto:phy.nandini@gmail.com)
 - **Location**: London, UK
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourusername)
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/nandini-chatterjee-41b3a885/)
+- **GitHub**: [Your GitHub Profile](https://github.com/py-dev-nandini-12)
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🎯 Future Enhancements
-
-- [ ] **Blog section** with MDX support
-- [ ] **CMS integration** for easy content updates
-- [ ] **Animation library** (Framer Motion)
-- [ ] **Multi-language support** (i18n)
-- [ ] **Analytics integration** (Google Analytics)
-- [ ] **Performance monitoring**
 
 ---
 

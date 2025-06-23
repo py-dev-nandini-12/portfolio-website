@@ -73,13 +73,13 @@ const Contact = () => {
       {
         name: "GitHub",
         icon: "🔗",
-        url: "https://github.com/yourusername",
+        url: "https://github.com/py-dev-nandini-12",
         color: "bg-gray-800 hover:bg-gray-700",
       },
       {
         name: "LinkedIn",
         icon: "💼",
-        url: "https://linkedin.com/in/yourusername",
+        url: "https://www.linkedin.com/in/nandini-chatterjee-41b3a885/",
         color: "bg-blue-600 hover:bg-blue-700",
       },
 
