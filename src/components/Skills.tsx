@@ -170,26 +170,8 @@ const Skills = () => {
         </div>
 
         {/* Quick Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div className="flex justify-center mb-12">
           {[
-            {
-              label: "Technologies",
-              value: "22+",
-              gradient: "from-slate-800 via-gray-800 to-gray-900",
-              icon: "💻",
-            },
-            {
-              label: "Years Exp.",
-              value: "2+",
-              gradient: "from-emerald-900 via-green-900 to-slate-900",
-              icon: "⏱️",
-            },
-            {
-              label: "Projects",
-              value: "50+",
-              gradient: "from-purple-900 via-indigo-900 to-slate-900",
-              icon: "🚀",
-            },
             {
               label: "Certifications",
               value: "8+",
@@ -206,6 +188,7 @@ const Skills = () => {
                 transform hover:scale-105
                 transition-all duration-300
                 border border-white/20
+                w-48
               `}
               style={{
                 animationDelay: `${allSkills.length * 50 + index * 100}ms`,

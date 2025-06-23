@@ -35,16 +35,18 @@ const Hero = () => {
               </div>
               {/* Gradient overlay for depth */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 via-transparent to-purple-500/20 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-all duration-300"></div>
-              
+
               {/* Floating elements around image */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce shadow-lg"></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-bounce animation-delay-200 shadow-lg"></div>
               <div className="absolute top-1/2 -left-6 w-4 h-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full animate-float shadow-lg"></div>
               <div className="absolute top-1/4 -right-6 w-5 h-5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-float animation-delay-200 shadow-lg"></div>
-              
+
               {/* Professional badge */}
               <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-lg border border-gray-200 dark:border-gray-700 group-hover:scale-105 transition-transform duration-300">
-                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Available for Hire</span>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                  Available for Hire
+                </span>
                 <div className="w-2 h-2 bg-green-500 rounded-full inline-block ml-2 animate-pulse"></div>
               </div>
             </div>
@@ -123,7 +125,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start mt-8">
               <a
-                href="https:/www.linkedin.com/in/nandini-chatterjee-41b3a885"
+                href="https://www.linkedin.com/in/nandini-chatterjee-41b3a885/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors duration-300"

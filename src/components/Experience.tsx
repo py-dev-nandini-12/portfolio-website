@@ -146,21 +146,29 @@ const Experience = () => {
               <div
                 key={index}
                 className={`relative flex items-center ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 } animate-slideInLeft animate-delay-${(index + 1) * 100}`}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white dark:bg-gray-900 border-4 border-purple-500 rounded-full z-10 hidden lg:block animate-pulse"></div>
 
                 {/* Experience Card */}
-                <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12'}`}>
+                <div
+                  className={`w-full lg:w-5/12 ${
+                    index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
+                  }`}
+                >
                   <div className="modern-card rounded-3xl p-8 hover-lift transition-all duration-500 group relative overflow-hidden">
                     {/* Gradient Background Effect */}
-                    <div className={`absolute top-0 left-0 w-full h-32 bg-gradient-to-br ${exp.color} opacity-5 rounded-t-3xl`}></div>
-                    
+                    <div
+                      className={`absolute top-0 left-0 w-full h-32 bg-gradient-to-br ${exp.color} opacity-5 rounded-t-3xl`}
+                    ></div>
+
                     {/* Header */}
                     <div className="flex items-start gap-4 mb-6 relative z-10">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${exp.color} rounded-2xl flex items-center justify-center text-2xl group-hover:animate-bounce transition-all duration-300 flex-shrink-0`}>
+                      <div
+                        className={`w-16 h-16 bg-gradient-to-br ${exp.color} rounded-2xl flex items-center justify-center text-2xl group-hover:animate-bounce transition-all duration-300 flex-shrink-0`}
+                      >
                         {exp.icon}
                       </div>
                       <div className="flex-1">
@@ -184,7 +192,9 @@ const Experience = () => {
                           className="text-gray-700 dark:text-gray-300 flex items-start animate-fadeInUp"
                           style={{ animationDelay: `${itemIndex * 100}ms` }}
                         >
-                          <div className={`w-2 h-2 bg-gradient-to-r ${exp.color} rounded-full mt-2 mr-4 flex-shrink-0 animate-pulse`}></div>
+                          <div
+                            className={`w-2 h-2 bg-gradient-to-r ${exp.color} rounded-full mt-2 mr-4 flex-shrink-0 animate-pulse`}
+                          ></div>
                           <span className="leading-relaxed">{item}</span>
                         </li>
                       ))}
@@ -217,38 +227,22 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Career Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fadeInUp animate-delay-500">
-          <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
-            <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-              6+
-            </div>
-            <div className="text-gray-600 dark:text-gray-400 font-medium">
-              Roles
-            </div>
-          </div>
-          <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
-            <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">
-              20+
-            </div>
-            <div className="text-gray-600 dark:text-gray-400 font-medium">
-              Technologies
-            </div>
-          </div>
+        {/* Career Highlights */}
+        <div className="mt-20 grid grid-cols-2 gap-6 animate-fadeInUp animate-delay-500">
           <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
             <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
-              5+
+              24/7
             </div>
             <div className="text-gray-600 dark:text-gray-400 font-medium">
-              Years Experience
+              Problem Solver
             </div>
           </div>
           <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
             <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">
-              10+
+              ∞
             </div>
             <div className="text-gray-600 dark:text-gray-400 font-medium">
-              Projects
+              Learning Mindset
             </div>
           </div>
         </div>
