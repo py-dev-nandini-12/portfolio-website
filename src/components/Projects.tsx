@@ -6,9 +6,17 @@ const Projects = () => {
       title: "Popular Movies with Storybook",
       description:
         "A comprehensive movie discovery application built with React and TypeScript, featuring component documentation with Storybook.",
-      technologies: ["REACT", "TYPESCRIPT", "STORYBOOK", "CSS3"],
+      technologies: [
+        "REACT",
+        "TYPESCRIPT",
+        "STORYBOOK",
+        "TAILWIND CSS",
+        "TMDB API",
+        "NEXT.JS",
+      ],
       liveUrl: "https://popular-movies-with-storybook-kq83ahc8g.vercel.app/",
-      githubUrl: "https://github.com/py-dev-nandini-12/Popular_Movies_With_Storybook",
+      githubUrl:
+        "https://github.com/py-dev-nandini-12/Popular_Movies_With_Storybook",
       gradient: "from-purple-500 via-pink-500 to-red-500",
       icon: "🎬",
     },
@@ -16,8 +24,9 @@ const Projects = () => {
       title: "Shopping App",
       description:
         "A modern e-commerce shopping application with product catalog, cart functionality, and user-friendly interface.",
-      technologies: ["REACT", "JAVASCRIPT", "CSS3", "HTML5"],
-      liveUrl: "https://shopping-qbdej2m7h-nandinis-projects-ce9532aa.vercel.app/",
+      technologies: ["REACT", "TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"],
+      liveUrl:
+        "https://shopping-qbdej2m7h-nandinis-projects-ce9532aa.vercel.app/",
       githubUrl: "https://github.com/py-dev-nandini-12/shopping-app",
       gradient: "from-blue-500 via-cyan-500 to-teal-500",
       icon: "🛒",
@@ -26,7 +35,7 @@ const Projects = () => {
       title: "Wind Speed Visualization",
       description:
         "Interactive data visualization application for wind speed analysis using modern charting libraries and responsive design.",
-      technologies: ["REACT", "JAVASCRIPT", "DATA VISUALIZATION", "CHARTS"],
+      technologies: ["PYTHON", "DATA VISUALIZATION", "CHARTS"],
       githubUrl: "https://github.com/py-dev-nandini-12/WindSpeed_visualization",
       gradient: "from-green-500 via-emerald-500 to-blue-500",
       icon: "📊",
@@ -44,7 +53,8 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            A showcase of my latest work combining modern technologies with creative solutions
+            A showcase of my latest work combining modern technologies with
+            creative solutions
           </p>
         </div>
 
@@ -52,15 +62,21 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`group modern-card rounded-3xl p-1 hover-lift transition-all duration-500 animate-scaleIn animate-delay-${(index + 1) * 100}`}
+              className={`group modern-card rounded-3xl p-1 hover-lift transition-all duration-500 animate-scaleIn animate-delay-${
+                (index + 1) * 100
+              }`}
             >
               <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 h-full relative overflow-hidden">
                 {/* Gradient Background Effect */}
-                <div className={`absolute top-0 left-0 w-full h-32 bg-gradient-to-br ${project.gradient} opacity-10 rounded-t-3xl`}></div>
-                
+                <div
+                  className={`absolute top-0 left-0 w-full h-32 bg-gradient-to-br ${project.gradient} opacity-10 rounded-t-3xl`}
+                ></div>
+
                 {/* Project Icon */}
                 <div className="relative z-10 mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-2xl flex items-center justify-center text-2xl group-hover:animate-bounce transition-all duration-300`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${project.gradient} rounded-2xl flex items-center justify-center text-2xl group-hover:animate-bounce transition-all duration-300`}
+                  >
                     {project.icon}
                   </div>
                 </div>
@@ -70,7 +86,7 @@ const Projects = () => {
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
                     {project.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 line-clamp-3">
                     {project.description}
                   </p>
@@ -80,8 +96,12 @@ const Projects = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={tech}
-                        className={`tech-badge animate-shimmer hover-scale transition-all duration-300 animate-delay-${techIndex * 50}`}
-                        style={{ animationDelay: `${(index * 200) + (techIndex * 100)}ms` }}
+                        className={`tech-badge animate-shimmer hover-scale transition-all duration-300 animate-delay-${
+                          techIndex * 50
+                        }`}
+                        style={{
+                          animationDelay: `${index * 200 + techIndex * 100}ms`,
+                        }}
                       >
                         {tech}
                       </span>
