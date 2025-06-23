@@ -153,15 +153,15 @@ const About = () => {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fadeInUp animate-delay-500">
           <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-              2+
+              3+
             </div>
             <div className="text-gray-600 dark:text-gray-400 font-medium">
-              Years Coding
+              Years Experience
             </div>
           </div>
           <div className="text-center p-6 modern-card rounded-2xl hover-scale transition-all duration-300">
             <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">
-              10+
+              30+
             </div>
             <div className="text-gray-600 dark:text-gray-400 font-medium">
               Projects Built
